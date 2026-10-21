@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshni Ganaparthi - Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="toolbar no-print">
+    <span class="toolbar-title">Click any text to edit · Changes are saved automatically</span>
+    <div class="toolbar-actions">
+      <button id="dl-btn" onclick="downloadResume(this)">Download Resume</button>
+      <button onclick="saveData()">Save</button>
+      <button onclick="loadData()">Load</button>
+      <button onclick="resetData()">Reset</button>
+    </div>
+  </div>
+
+  <main class="page" id="resume">
+    <header class="header">
+      <div class="identity">
+        <h1 contenteditable="true" spellcheck="false">Joshni Ganaparthi</h1>
+        <div class="linkedin-line">
+          <a href="https://www.linkedin.com/in/joshni-ganaparthi-b09417213/" target="_blank" rel="noopener noreferrer" aria-label="Joshni Ganaparthi LinkedIn profile">
+            <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.5H4.98V9h2.95v9.5ZM6.46 7.7a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42ZM19 18.5h-2.95v-4.62c0-1.1-.02-2.51-1.53-2.51-1.53 0-1.77 1.2-1.77 2.43v4.7H9.8V9h2.83v1.3h.04c.4-.75 1.36-1.53 2.8-1.53 3 0 3.55 1.97 3.55 4.53v5.2Z"/>
+            </svg>
+            <span contenteditable="true" spellcheck="false">joshni-ganaparthi-b09417213</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact">
+        <div contenteditable="true" spellcheck="false">Email: joshniganaparthi6@gmail.com</div>
+        <div contenteditable="true" spellcheck="false">Mobile: 8328469769</div>
+        <div contenteditable="true" spellcheck="false">Pune, India</div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>SUMMARY</h2>
+      <p contenteditable="true" spellcheck="false">Senior Software Engineer with 3+ years of experience in cloud-based data integration, transformation, and enterprise product information workflows using Java, React, SQL, PySpark, Spring Boot, AWS Lambda, S3, Databricks, Palantir Foundry, and SAP HANA. Experienced in data modeling, metadata management, SAP HANA-to-EDL transformation pipelines, data quality, OpenSearch, GitHub Actions, REST API integrations, and CI/CD.</p>
+    </section>
+
+    <section class="section">
+      <h2>EDUCATION</h2>
+      <div class="entry-heading">
+        <strong contenteditable="true" spellcheck="false">VIT Amaravathi</strong>
+        <span contenteditable="true" spellcheck="false">Amaravathi, India</span>
+      </div>
+      <div class="entry-heading">
+        <em contenteditable="true" spellcheck="false">Bachelor of Technology - CSE</em>
+        <span contenteditable="true" spellcheck="false">July 2019 - May 2023</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>TECHNICAL SKILLS</h2>
+      <ul class="compact-list" id="skills-list">
+        <li contenteditable="true" spellcheck="false"><strong>Courses:</strong> Database, Python, Data Structures, React, Java</li>
+        <li contenteditable="true" spellcheck="false"><strong>Databases:</strong> MySQL, SAP HANA, PostgreSQL</li>
+        <li contenteditable="true" spellcheck="false"><strong>Cloud and Data Platforms:</strong> AWS Lambda, S3, Databricks, Palantir Foundry, EDL, EC2, ECS, SQS, SNS</li>
+        <li contenteditable="true" spellcheck="false"><strong>Languages &amp; Frameworks:</strong> SQL, PySpark, Java, OOPS, React, Spring Boot, Python fundamentals</li>
+        <li contenteditable="true" spellcheck="false"><strong>Integration &amp; Data Management:</strong> SAP HANA-to-EDL transformation pipelines, metadata management, data quality, REST API integrations</li>
+        <li contenteditable="true" spellcheck="false"><strong>DevOps &amp; Monitoring:</strong> CI/CD, GitHub Actions, Terraform, Datadog monitoring, Mend</li>
+        <li contenteditable="true" spellcheck="false"><strong>Agile &amp; Delivery:</strong> Agile/Scrum, sprint planning, backlog refinement, code reviews, cross-functional collaboration</li>
+        <li contenteditable="true" spellcheck="false"><strong>Tools:</strong> Git, VS Code, Bruno/Postman, JIRA, OpenSearch, GitHub Copilot</li>
+        <li contenteditable="true" spellcheck="false"><strong>Problem Solving:</strong> Root cause analysis, debugging, troubleshooting, analytical thinking</li>
+      </ul>
+      <button class="add-item no-print" onclick="addBullet('skills-list')">+ Add skill</button>
+    </section>
+
+    <section class="section">
+      <h2>EXPERIENCE</h2>
+      <div class="experience-entry">
+        <div class="entry-heading">
+          <strong contenteditable="true" spellcheck="false">Senior Software Engineer | John Deere</strong>
+          <span contenteditable="true" spellcheck="false">July 2024 - Present</span>
+        </div>
+        <ul class="compact-list" id="senior-experience-list">
+          <li contenteditable="true" spellcheck="false">Developed EDL data catalogs, metadata models, and schemas, supporting consistent data modeling, governance, and enterprise data integration.</li>
+          <li contenteditable="true" spellcheck="false">Led frontend design decisions and leveraged the GSD tool to migrate a legacy Angular codebase to React, converting key components.</li>
+          <li contenteditable="true" spellcheck="false">Built and maintained SAP HANA-to-EDL transformation pipelines in Palantir Foundry, improving data accessibility, integration, and consistency across enterprise data workflows.</li>
+          <li contenteditable="true" spellcheck="false">Integrated REST APIs for real-time event data retrieval and reliable downstream consumption.</li>
+          <li contenteditable="true" spellcheck="false">Improved database query efficiency by refining joins, filtering, and data retrieval patterns to reduce processing overhead and enhance performance optimization.</li>
+          <li contenteditable="true" spellcheck="false">Managed database changes with Liquibase version control and implemented AWS Lambda data-processing workflows with required IAM policies.</li>
+          <li contenteditable="true" spellcheck="false">Configured GitHub Actions CI/CD pipelines for non-production and production environments, supporting reliable delivery.</li>
+          <li contenteditable="true" spellcheck="false">Implemented Datadog monitoring, dashboards, and ECS alerts while supporting data quality validation and reliable production workflows.</li>
+          <li contenteditable="true" spellcheck="false">Built an AI-driven Playwright automation pipeline that generates end-to-end test cases from business requirements, executes them in parallel, and integrates with GitHub Actions CI/CD for automated regression validation.</li>
+        </ul>
+        <button class="add-item no-print" onclick="addBullet('senior-experience-list')">+ Add bullet</button>
+      </div>
+      <div class="experience-entry">
+        <div class="entry-heading">
+          <strong contenteditable="true" spellcheck="false">Graduate Engineer Trainee | John Deere</strong>
+          <span contenteditable="true" spellcheck="false">July 2023 - July 2024</span>
+        </div>
+        <ul class="compact-list" id="trainee-experience-list">
+          <li contenteditable="true" spellcheck="false">Built Palantir Foundry transformation jobs and validated data before loading it into the Enterprise Data Lake.</li>
+          <li contenteditable="true" spellcheck="false">Created data catalogs, metadata, and schemas while supporting enterprise data integration and quality activities across integrated systems.</li>
+          <li contenteditable="true" spellcheck="false">Built a Java mini-project using object-oriented programming.</li>
+        </ul>
+        <button class="add-item no-print" onclick="addBullet('trainee-experience-list')">+ Add bullet</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>PROJECTS</h2>
+      <div class="project-entry">
+        <div class="entry-heading"><strong contenteditable="true" spellcheck="false">MOCI Presentation</strong></div>
+        <p class="project-description" contenteditable="true" spellcheck="false">MOCI Presentation is a key component of the MOCI product family that publishes product, pricing, and lifecycle information to enterprise consumers across John Deere.</p>
+        <ul class="compact-list" id="moci-presentation-list">
+          <li contenteditable="true" spellcheck="false">Developed a Notification Dashboard by creating Spring Boot REST APIs and integrating them with a responsive React UI to monitor event lifecycle statuses.</li>
+          <li contenteditable="true" spellcheck="false">Implemented backend services using Java to support efficient event processing and data management.</li>
+          <li contenteditable="true" spellcheck="false">Collaborated cross-functionally to deliver enhancements and resolve issues across product information and downstream integration workflows.</li>
+        </ul>
+        <button class="add-item no-print" onclick="addBullet('moci-presentation-list')">+ Add bullet</button>
+      </div>
+      <div class="project-entry">
+        <div class="entry-heading"><strong contenteditable="true" spellcheck="false">MOCI Product Information</strong></div>
+        <p class="project-description" contenteditable="true" spellcheck="false">MOCI Product Information is a product configuration platform used to manage product structures, ordering attributes, availability, and sales-related information for John Deere equipment.</p>
+        <ul class="compact-list" id="moci-product-list">
+          <li contenteditable="true" spellcheck="false">Managed product configuration within MOCI by creating and maintaining base codes, option codes, function groups, and attachments.</li>
+          <li contenteditable="true" spellcheck="false">Assigned sales channels, performed product validations, and advanced validated products through pricing and downstream systems.</li>
+          <li contenteditable="true" spellcheck="false">Collaborated with business teams to analyse requirements, implement enhancements, and resolve production issues across integrated systems.</li>
+          <li contenteditable="true" spellcheck="false">Participated in end-to-end testing, deployment and release support, and validation of product configuration changes.</li>
+        </ul>
+        <button class="add-item no-print" onclick="addBullet('moci-product-list')">+ Add bullet</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>CERTIFICATIONS</h2>
+      <ul class="compact-list" id="certifications-list">
+        <li contenteditable="true" spellcheck="false">AWS Certified Cloud Practitioner</li>
+        <li contenteditable="true" spellcheck="false">Java, React, Databricks, Git, API - Pluralsight</li>
+      </ul>
+      <button class="add-item no-print" onclick="addBullet('certifications-list')">+ Add certification</button>
+    </section>
+
+    <section class="section">
+      <h2>ACHIEVEMENTS</h2>
+      <ul class="compact-list" id="achievements-list">
+        <li contenteditable="true" spellcheck="false">Received Recognition for Innovation Hackathon participation.</li>
+        <li contenteditable="true" spellcheck="false">Received Recognition for Developing Notification Dashboard Independently.</li>
+      </ul>
+      <button class="add-item no-print" onclick="addBullet('achievements-list')">+ Add achievement</button>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
